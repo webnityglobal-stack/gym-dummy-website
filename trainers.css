@@ -1,0 +1,252 @@
+
+/* HERO */
+.trainers-hero {
+    min-height: 460px;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: url("https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=1800&q=85") center/cover no-repeat;
+}
+
+.trainers-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,.94), rgba(0,0,0,.35));
+}
+
+.trainers-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+}
+
+.trainers-hero-content h1 {
+    font-family: var(--heading);
+    font-size: clamp(55px, 8vw, 90px);
+    line-height: 1;
+    margin: 15px 0;
+}
+
+.trainers-hero-content h1 span {
+    color: var(--red);
+}
+
+.trainers-hero-content p {
+    color: #ddd;
+    margin-bottom: 28px;
+}
+
+/* INTRO */
+.trainer-intro {
+    text-align: center;
+    max-width: 850px;
+    margin: auto;
+}
+
+.trainer-intro .section-description {
+    margin: 15px auto 0;
+}
+
+/* TRAINER GRID */
+.trainer-team {
+    padding-top: 20px;
+}
+
+.trainer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.trainer-card {
+    background: var(--card);
+    overflow: hidden;
+    transition: .3s ease;
+}
+
+.trainer-card:hover {
+    transform: translateY(-8px);
+}
+
+.trainer-image {
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.trainer-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: .5s ease;
+}
+
+.trainer-card:hover .trainer-image img {
+    transform: scale(1.06);
+}
+
+.trainer-social {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    gap: 8px;
+}
+
+.trainer-social a {
+    width: 38px;
+    height: 38px;
+    display: grid;
+    place-items: center;
+    background: var(--red);
+    color: white;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.trainer-social a:hover {
+    background: white;
+    color: var(--red);
+}
+
+.trainer-info {
+    padding: 25px;
+}
+
+.trainer-role {
+    color: var(--red);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.trainer-info h3 {
+    font-family: var(--heading);
+    font-size: 30px;
+    margin: 8px 0;
+}
+
+.trainer-info > p {
+    color: var(--gray);
+    font-size: 13px;
+    line-height: 1.7;
+    min-height: 45px;
+}
+
+.trainer-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    border-top: 1px solid #383838;
+    padding-top: 17px;
+    margin-top: 18px;
+}
+
+.trainer-meta span {
+    color: #ccc;
+    font-size: 11px;
+}
+
+.trainer-meta i {
+    color: var(--red);
+    margin-right: 5px;
+}
+
+/* BENEFITS */
+.trainer-benefits {
+    background: var(--dark);
+}
+
+.benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.benefit-item {
+    padding: 35px 25px;
+    background: var(--card);
+    text-align: center;
+    border-bottom: 3px solid transparent;
+    transition: .3s;
+}
+
+.benefit-item:hover {
+    border-color: var(--red);
+    transform: translateY(-6px);
+}
+
+.benefit-item i {
+    font-size: 35px;
+    color: var(--red);
+    margin-bottom: 20px;
+}
+
+.benefit-item h3 {
+    font-family: var(--heading);
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.benefit-item p {
+    color: var(--gray);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* CTA */
+.trainer-cta {
+    padding: 90px 8%;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,.88), rgba(0,0,0,.9)),
+        url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1600&q=85") center/cover;
+}
+
+.trainer-cta h2 {
+    font-family: var(--heading);
+    font-size: clamp(38px, 6vw, 65px);
+    margin: 15px 0;
+}
+
+.trainer-cta h2 span {
+    color: var(--red);
+}
+
+.trainer-cta p {
+    color: #ccc;
+    margin-bottom: 25px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 950px) {
+    .trainer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .benefit-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .trainers-hero {
+        min-height: 380px;
+        padding: 60px 6%;
+    }
+
+    .trainer-grid,
+    .benefit-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trainer-image {
+        height: 380px;
+    }
+
+    .trainer-cta {
+        padding: 65px 6%;
+    }
+}

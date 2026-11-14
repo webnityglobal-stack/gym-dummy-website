@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | IRONCORE FITNESS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <div class="announcement">
+        <p>HAVE QUESTIONS? WE'RE HERE TO HELP!</p>
+    </div>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo"><span>IRONCORE</span> FITNESS</a>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="programs.html">Programs</a>
+            <a href="about.html">About</a>
+            <a href="trainers.html">Trainers</a>
+            <a href="membership.html">Membership</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="booking.html" class="nav-join">Join Now</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="contact-hero">
+        <div class="contact-hero-overlay"></div>
+        <div class="contact-hero-content">
+            <span class="section-label">GET IN TOUCH</span>
+            <h1>LET'S TALK <span>FITNESS.</span></h1>
+            <p>Have a question about memberships, programs or training? Get in touch with our team.</p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="contact-details section-padding">
+        <div class="section-heading">
+            <span class="section-label">CONTACT INFORMATION</span>
+            <h2 class="section-title">WE'D LOVE TO <span>HEAR FROM YOU</span></h2>
+            <p class="section-description">
+                Reach out to us through any of the following channels.
+            </p>
+        </div>
+
+        <div class="contact-info-grid">
+
+            <div class="contact-info-card">
+                <div class="contact-info-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <h3>CALL US</h3>
+                <p>Speak with our fitness team.</p>
+                <a href="tel:+919876543210">+91 98765 43210</a>
+            </div>
+
+            <div class="contact-info-card">
+                <div class="contact-info-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3>EMAIL US</h3>
+                <p>Send us your questions.</p>
+                <a href="mailto:info@ironcorefitness.com">info@ironcorefitness.com</a>
+            </div>
+
+            <div class="contact-info-card">
+                <div class="contact-info-icon">
+                    <i class="fas fa-location-dot"></i>
+                </div>
+                <h3>VISIT US</h3>
+                <p>Come and explore our gym.</p>
+                <span>Your City, India</span>
+            </div>
+
+            <div class="contact-info-card">
+                <div class="contact-info-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3>WORKING HOURS</h3>
+                <p>Monday to Saturday</p>
+                <span>6:00 AM – 10:00 PM</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-main section-padding">
+
+        <div class="contact-main-info">
+            <span class="section-label">LET'S CONNECT</span>
+            <h2 class="about-heading">HAVE A QUESTION? <span>DROP US A MESSAGE.</span></h2>
+
+            <p>
+                Tell us what you need help with. Our team will get in touch
+                to discuss your fitness goals and answer your questions.
+            </p>
+
+            <div class="contact-points">
+                <div>
+                    <i class="fas fa-check-circle"></i>
+                    <span>Membership enquiries</span>
+                </div>
+                <div>
+                    <i class="fas fa-check-circle"></i>
+                    <span>Personal training information</span>
+                </div>
+                <div>
+                    <i class="fas fa-check-circle"></i>
+                    <span>Program and schedule details</span>
+                </div>
+            </div>
+
+            <div class="contact-social">
+                <h3>FOLLOW US</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+            <div class="contact-form-heading">
+                <h2>SEND US A <span>MESSAGE</span></h2>
+                <p>Fields marked with * are required.</p>
+            </div>
+
+            <form id="contactForm" class="contact-form">
+
+                <div class="contact-form-row">
+                    <div class="contact-field">
+                        <label for="contactName">Full Name *</label>
+                        <input type="text" id="contactName" name="name"
+                            placeholder="Your name" required>
+                    </div>
+
+                    <div class="contact-field">
+                        <label for="contactPhone">Mobile Number *</label>
+                        <input type="tel" id="contactPhone" name="phone"
+                            placeholder="10-digit mobile number"
+                            pattern="[0-9]{10}" maxlength="10" required>
+                    </div>
+                </div>
+
+                <div class="contact-field">
+                    <label for="contactEmail">Email Address *</label>
+                    <input type="email" id="contactEmail" name="email"
+                        placeholder="Your email address" required>
+                </div>
+
+                <div class="contact-field">
+                    <label for="contactSubject">Subject *</label>
+                    <select id="contactSubject" name="subject" required>
+                        <option value="">Select enquiry type</option>
+                        <option value="Membership Enquiry">Membership Enquiry</option>
+                        <option value="Personal Training">Personal Training</option>
+                        <option value="Fitness Programs">Fitness Programs</option>
+                        <option value="General Enquiry">General Enquiry</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="contact-field">
+                    <label for="contactText">Your Message *</label>
+                    <textarea id="contactText" name="message" rows="5"
+                        placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary contact-submit">
+                    SEND MESSAGE <i class="fas fa-paper-plane"></i>
+                </button>
+
+                <p id="contactMessage" class="contact-message" aria-live="polite"></p>
+            </form>
+        </div>
+
+    </section>
+
+    <!-- Map -->
+    <section class="contact-map-section">
+        <div class="map-heading">
+            <span class="section-label">FIND OUR GYM</span>
+            <h2 class="section-title">COME <span>VISIT US</span></h2>
+            <p class="section-description">
+                Replace the sample map with your actual gym location.
+            </p>
+        </div>
+
+        <div class="contact-map">
+            <iframe
+                src="https://www.google.com/maps?q=gym%20near%20me&output=embed"
+                width="100%"
+                height="400"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Gym location map">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="contact-cta">
+        <span class="section-label">READY TO GET STARTED?</span>
+        <h2>LET'S BUILD A <span>STRONGER YOU.</span></h2>
+        <p>Your fitness journey is just one step away.</p>
+        <a href="booking.html" class="btn btn-primary">BOOK YOUR SESSION</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo"><span>IRONCORE</span> FITNESS</a>
+                <p>Build your body. Own your power. Start your fitness journey with us.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>QUICK LINKS</h3>
+                <a href="index.html">Home</a>
+                <a href="programs.html">Programs</a>
+                <a href="about.html">About Us</a>
+                <a href="trainers.html">Trainers</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>OUR SERVICES</h3>
+                <a href="programs.html">Strength Training</a>
+                <a href="programs.html">Weight Management</a>
+                <a href="programs.html">CrossFit</a>
+                <a href="programs.html">Personal Training</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>CONTACT</h3>
+                <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                <p><i class="fas fa-envelope"></i> info@ironcorefitness.com</p>
+                <p><i class="fas fa-location-dot"></i> Your City, India</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 IRONCORE FITNESS. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>

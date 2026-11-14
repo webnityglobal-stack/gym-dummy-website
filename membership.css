@@ -1,0 +1,294 @@
+
+/* HERO */
+.membership-hero {
+    min-height: 450px;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1800&q=85") center/cover no-repeat;
+}
+
+.membership-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,.95), rgba(0,0,0,.35));
+}
+
+.membership-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+}
+
+.membership-hero-content h1 {
+    font-family: var(--heading);
+    font-size: clamp(55px, 8vw, 90px);
+    line-height: 1;
+    margin: 15px 0;
+}
+
+.membership-hero-content h1 span {
+    color: var(--red);
+}
+
+.membership-hero-content p {
+    color: #ddd;
+    margin-bottom: 28px;
+}
+
+/* PRICING */
+.membership-plans {
+    background: var(--black);
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    align-items: stretch;
+    margin-top: 50px;
+}
+
+.pricing-card {
+    background: var(--card);
+    padding: 35px 28px;
+    position: relative;
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    transition: .3s;
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--red);
+}
+
+.pricing-card.popular {
+    border: 2px solid var(--red);
+}
+
+.popular-tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--red);
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 10px 18px;
+}
+
+.plan-name {
+    color: var(--red);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+}
+
+.pricing-top h3 {
+    font-family: var(--heading);
+    font-size: 43px;
+    margin: 20px 0 8px;
+}
+
+.pricing-top h3 span {
+    font-family: var(--body);
+    font-size: 13px;
+    color: var(--gray);
+    font-weight: 400;
+}
+
+.pricing-top p {
+    color: var(--gray);
+    font-size: 13px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #3b3b3b;
+}
+
+.pricing-features {
+    flex: 1;
+    padding: 25px 0;
+}
+
+.pricing-features p {
+    color: #ddd;
+    font-size: 13px;
+    margin: 17px 0;
+}
+
+.pricing-features i {
+    color: var(--red);
+    margin-right: 10px;
+}
+
+.pricing-features .disabled {
+    color: #777;
+}
+
+.pricing-features .disabled i {
+    color: #777;
+}
+
+.pricing-card .btn {
+    text-align: center;
+    width: 100%;
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 13px 20px;
+    border: 1px solid var(--red);
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+
+.btn-outline:hover {
+    background: var(--red);
+}
+
+/* BENEFITS */
+.membership-benefits {
+    background: var(--dark);
+}
+
+.member-benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.member-benefit {
+    background: var(--card);
+    padding: 35px 22px;
+    text-align: center;
+    transition: .3s;
+}
+
+.member-benefit:hover {
+    transform: translateY(-7px);
+}
+
+.member-benefit i {
+    color: var(--red);
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.member-benefit h3 {
+    font-family: var(--heading);
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.member-benefit p {
+    color: var(--gray);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* FAQ */
+.faq-container {
+    max-width: 850px;
+    margin: 40px auto 0;
+}
+
+.faq-item {
+    background: var(--card);
+    margin-bottom: 12px;
+    border: 1px solid #333;
+}
+
+.faq-item summary {
+    padding: 22px 25px;
+    cursor: pointer;
+    list-style: none;
+    font-weight: 600;
+    position: relative;
+    padding-right: 55px;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "+";
+    position: absolute;
+    right: 25px;
+    color: var(--red);
+    font-size: 24px;
+    top: 14px;
+}
+
+.faq-item[open] summary::after {
+    content: "−";
+}
+
+.faq-item > p {
+    padding: 0 25px 22px;
+    color: var(--gray);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* CTA */
+.membership-cta {
+    padding: 90px 8%;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,.88), rgba(0,0,0,.9)),
+        url("https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1600&q=85") center/cover;
+}
+
+.membership-cta h2 {
+    font-family: var(--heading);
+    font-size: clamp(38px, 6vw, 65px);
+    margin: 15px 0;
+}
+
+.membership-cta h2 span {
+    color: var(--red);
+}
+
+.membership-cta p {
+    color: #ccc;
+    margin-bottom: 25px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 950px) {
+    .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .member-benefit-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .membership-hero {
+        min-height: 380px;
+        padding: 60px 6%;
+    }
+
+    .pricing-grid,
+    .member-benefit-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-card.popular {
+        order: -1;
+    }
+
+    .membership-cta {
+        padding: 65px 6%;
+    }
+}

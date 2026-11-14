@@ -1,0 +1,234 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Session | IRONCORE FITNESS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+
+    <div class="announcement">
+        <p>YOUR FITNESS JOURNEY STARTS HERE — BOOK YOUR SESSION!</p>
+    </div>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo"><span>IRONCORE</span> FITNESS</a>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="programs.html">Programs</a>
+            <a href="about.html">About</a>
+            <a href="trainers.html">Trainers</a>
+            <a href="membership.html">Membership</a>
+            <a href="contact.html">Contact</a>
+            <a href="booking.html" class="nav-join active">Join Now</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="booking-hero">
+        <div class="booking-hero-overlay"></div>
+        <div class="booking-hero-content">
+            <span class="section-label">TAKE THE FIRST STEP</span>
+            <h1>LET'S START YOUR <span>TRANSFORMATION.</span></h1>
+            <p>Fill in your details and our team will contact you to discuss your fitness journey.</p>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="booking-section section-padding">
+
+        <div class="booking-info">
+            <span class="section-label">WHY WAIT?</span>
+            <h2 class="about-heading">YOUR FITNESS JOURNEY <span>STARTS HERE.</span></h2>
+
+            <p>
+                Whether your goal is building muscle, losing weight or improving
+                overall fitness, we're ready to help you take the next step.
+            </p>
+
+            <div class="booking-info-item">
+                <i class="fas fa-dumbbell"></i>
+                <div>
+                    <h3>Expert Training</h3>
+                    <p>Guidance to help you train with confidence.</p>
+                </div>
+            </div>
+
+            <div class="booking-info-item">
+                <i class="fas fa-calendar-check"></i>
+                <div>
+                    <h3>Flexible Scheduling</h3>
+                    <p>Choose a preferred date and time for your visit.</p>
+                </div>
+            </div>
+
+            <div class="booking-info-item">
+                <i class="fas fa-users"></i>
+                <div>
+                    <h3>Supportive Community</h3>
+                    <p>Stay motivated throughout your fitness journey.</p>
+                </div>
+            </div>
+
+            <div class="booking-contact">
+                <h3>NEED HELP BOOKING?</h3>
+                <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                <p><i class="fas fa-envelope"></i> info@ironcorefitness.com</p>
+            </div>
+        </div>
+
+        <div class="booking-form-wrapper">
+            <div class="booking-form-heading">
+                <span class="section-label">BOOK YOUR SESSION</span>
+                <h2>BOOKING <span>FORM</span></h2>
+                <p>Enter your details below.</p>
+            </div>
+
+            <form id="bookingForm" class="booking-page-form">
+
+                <div class="booking-field">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" name="fullName"
+                        placeholder="Enter your full name" required>
+                </div>
+
+                <div class="booking-field">
+                    <label for="phone">Mobile Number *</label>
+                    <input type="tel" id="phone" name="phone"
+                        placeholder="Enter 10-digit mobile number"
+                        pattern="[0-9]{10}" maxlength="10" required>
+                </div>
+
+                <div class="booking-field">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email"
+                        placeholder="Enter your email address" required>
+                </div>
+
+                <div class="booking-field">
+                    <label for="program">Select Fitness Program *</label>
+                    <select id="program" name="program" required>
+                        <option value="">Choose a program</option>
+                        <option value="strength">Strength Training</option>
+                        <option value="weight">Weight Management</option>
+                        <option value="crossfit">CrossFit Training</option>
+                        <option value="personal">Personal Training</option>
+                        <option value="yoga">Yoga & Flexibility</option>
+                        <option value="cardio">Cardio Training</option>
+                    </select>
+                </div>
+
+                <div class="booking-field">
+                    <label for="plan">Select Membership Plan</label>
+                    <select id="plan" name="plan">
+                        <option value="">Choose a membership plan</option>
+                        <option value="monthly">Monthly - ₹1,499</option>
+                        <option value="quarterly">Quarterly - ₹3,999</option>
+                        <option value="yearly">Yearly - ₹11,999</option>
+                    </select>
+                </div>
+
+                <div class="booking-row">
+                    <div class="booking-field">
+                        <label for="visitDate">Preferred Date *</label>
+                        <input type="date" id="visitDate" name="visitDate" required>
+                    </div>
+
+                    <div class="booking-field">
+                        <label for="visitTime">Preferred Time *</label>
+                        <select id="visitTime" name="visitTime" required>
+                            <option value="">Select time</option>
+                            <option value="06:00 AM">06:00 AM</option>
+                            <option value="07:00 AM">07:00 AM</option>
+                            <option value="08:00 AM">08:00 AM</option>
+                            <option value="09:00 AM">09:00 AM</option>
+                            <option value="05:00 PM">05:00 PM</option>
+                            <option value="06:00 PM">06:00 PM</option>
+                            <option value="07:00 PM">07:00 PM</option>
+                            <option value="08:00 PM">08:00 PM</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="booking-field">
+                    <label for="message">Additional Message</label>
+                    <textarea id="message" name="message" rows="4"
+                        placeholder="Tell us about your fitness goals (optional)"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary booking-submit">
+                    SUBMIT BOOKING <i class="fas fa-arrow-right"></i>
+                </button>
+
+                <p id="bookingMessage" class="booking-message" aria-live="polite"></p>
+
+                <p class="booking-note">
+                    By submitting this form, you agree to be contacted by our team.
+                </p>
+
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo"><span>IRONCORE</span> FITNESS</a>
+                <p>Build your body. Own your power. Start your fitness journey with us.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>QUICK LINKS</h3>
+                <a href="index.html">Home</a>
+                <a href="programs.html">Programs</a>
+                <a href="about.html">About Us</a>
+                <a href="trainers.html">Trainers</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>OUR SERVICES</h3>
+                <a href="programs.html">Strength Training</a>
+                <a href="programs.html">Weight Management</a>
+                <a href="programs.html">CrossFit</a>
+                <a href="programs.html">Personal Training</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>CONTACT</h3>
+                <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                <p><i class="fas fa-envelope"></i> info@ironcorefitness.com</p>
+                <p><i class="fas fa-location-dot"></i> Your City, India</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 IRONCORE FITNESS. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="booking.js"></script>
+</body>
+</html>

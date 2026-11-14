@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Plans | IRONCORE FITNESS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/membership.css">
+</head>
+<body>
+
+    <div class="announcement">
+        <p>YOUR FITNESS JOURNEY STARTS HERE — JOIN IRONCORE TODAY!</p>
+    </div>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo"><span>IRONCORE</span> FITNESS</a>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="programs.html">Programs</a>
+            <a href="about.html">About</a>
+            <a href="trainers.html">Trainers</a>
+            <a href="membership.html" class="active">Membership</a>
+            <a href="contact.html">Contact</a>
+            <a href="booking.html" class="nav-join">Join Now</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="membership-hero">
+        <div class="membership-hero-overlay"></div>
+        <div class="membership-hero-content">
+            <span class="section-label">CHOOSE YOUR PLAN</span>
+            <h1>INVEST IN <span>YOURSELF.</span></h1>
+            <p>Find the right membership and start building a stronger you.</p>
+            <a href="#plans" class="btn btn-primary">VIEW MEMBERSHIP PLANS</a>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="membership-plans section-padding" id="plans">
+
+        <div class="section-heading">
+            <span class="section-label">SIMPLE & FLEXIBLE PRICING</span>
+            <h2 class="section-title">CHOOSE YOUR <span>MEMBERSHIP</span></h2>
+            <p class="section-description">
+                Flexible plans designed to support your fitness journey.
+            </p>
+        </div>
+
+        <div class="pricing-grid">
+
+            <!-- Monthly -->
+            <div class="pricing-card">
+                <div class="pricing-top">
+                    <span class="plan-name">MONTHLY PLAN</span>
+                    <h3>₹1,499<span>/month</span></h3>
+                    <p>Perfect for getting started.</p>
+                </div>
+
+                <div class="pricing-features">
+                    <p><i class="fas fa-check"></i> Full Gym Access</p>
+                    <p><i class="fas fa-check"></i> Standard Equipment Access</p>
+                    <p><i class="fas fa-check"></i> Group Workout Sessions</p>
+                    <p><i class="fas fa-check"></i> Basic Fitness Assessment</p>
+                    <p class="disabled"><i class="fas fa-times"></i> Personal Trainer</p>
+                    <p class="disabled"><i class="fas fa-times"></i> Diet Consultation</p>
+                </div>
+
+                <a href="booking.html?plan=monthly" class="btn btn-outline">
+                    CHOOSE MONTHLY
+                </a>
+            </div>
+
+            <!-- Quarterly -->
+            <div class="pricing-card popular">
+                <div class="popular-tag">MOST POPULAR</div>
+
+                <div class="pricing-top">
+                    <span class="plan-name">QUARTERLY PLAN</span>
+                    <h3>₹3,999<span>/3 months</span></h3>
+                    <p>For consistent fitness progress.</p>
+                </div>
+
+                <div class="pricing-features">
+                    <p><i class="fas fa-check"></i> Full Gym Access</p>
+                    <p><i class="fas fa-check"></i> All Equipment Access</p>
+                    <p><i class="fas fa-check"></i> Group Workout Sessions</p>
+                    <p><i class="fas fa-check"></i> Fitness Assessment</p>
+                    <p><i class="fas fa-check"></i> Trainer Guidance</p>
+                    <p class="disabled"><i class="fas fa-times"></i> Diet Consultation</p>
+                </div>
+
+                <a href="booking.html?plan=quarterly" class="btn btn-primary">
+                    CHOOSE QUARTERLY
+                </a>
+            </div>
+
+            <!-- Yearly -->
+            <div class="pricing-card">
+                <div class="pricing-top">
+                    <span class="plan-name">YEARLY PLAN</span>
+                    <h3>₹11,999<span>/year</span></h3>
+                    <p>Best value for long-term commitment.</p>
+                </div>
+
+                <div class="pricing-features">
+                    <p><i class="fas fa-check"></i> Full Gym Access</p>
+                    <p><i class="fas fa-check"></i> All Equipment Access</p>
+                    <p><i class="fas fa-check"></i> Group Workout Sessions</p>
+                    <p><i class="fas fa-check"></i> Regular Fitness Assessment</p>
+                    <p><i class="fas fa-check"></i> Trainer Guidance</p>
+                    <p><i class="fas fa-check"></i> Diet Consultation</p>
+                </div>
+
+                <a href="booking.html?plan=yearly" class="btn btn-outline">
+                    CHOOSE YEARLY
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="membership-benefits section-padding">
+        <div class="section-heading">
+            <span class="section-label">MEMBER ADVANTAGES</span>
+            <h2 class="section-title">MORE REASONS TO <span>JOIN US</span></h2>
+        </div>
+
+        <div class="member-benefit-grid">
+
+            <div class="member-benefit">
+                <i class="fas fa-dumbbell"></i>
+                <h3>Modern Equipment</h3>
+                <p>Access equipment designed for effective workouts.</p>
+            </div>
+
+            <div class="member-benefit">
+                <i class="fas fa-user-tie"></i>
+                <h3>Expert Trainers</h3>
+                <p>Get guidance from experienced fitness professionals.</p>
+            </div>
+
+            <div class="member-benefit">
+                <i class="fas fa-clock"></i>
+                <h3>Flexible Timings</h3>
+                <p>Choose workout hours that suit your daily routine.</p>
+            </div>
+
+            <div class="member-benefit">
+                <i class="fas fa-users"></i>
+                <h3>Fitness Community</h3>
+                <p>Train with people who motivate you to do better.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="membership-faq section-padding">
+        <div class="section-heading">
+            <span class="section-label">GOT QUESTIONS?</span>
+            <h2 class="section-title">FREQUENTLY ASKED <span>QUESTIONS</span></h2>
+        </div>
+
+        <div class="faq-container">
+
+            <details class="faq-item">
+                <summary>Can beginners join IRONCORE FITNESS?</summary>
+                <p>Yes. Our programs are designed for beginners as well as experienced members.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>Can I change my membership plan?</summary>
+                <p>Contact our team to discuss available membership upgrade options.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>Do you provide personal training?</summary>
+                <p>Yes. Personal training options are available. Contact us for details.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>How can I join the gym?</summary>
+                <p>Select your preferred membership plan and submit the booking form.</p>
+            </details>
+
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="membership-cta">
+        <span class="section-label">DON'T WAIT FOR TOMORROW</span>
+        <h2>YOUR STRONGER SELF <span>STARTS TODAY.</span></h2>
+        <p>Choose your plan and take the first step towards your fitness goals.</p>
+        <a href="booking.html" class="btn btn-primary">JOIN IRONCORE NOW</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo"><span>IRONCORE</span> FITNESS</a>
+                <p>Build your body. Own your power. Start your fitness journey with us.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>QUICK LINKS</h3>
+                <a href="index.html">Home</a>
+                <a href="programs.html">Programs</a>
+                <a href="about.html">About Us</a>
+                <a href="trainers.html">Trainers</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>OUR SERVICES</h3>
+                <a href="programs.html">Strength Training</a>
+                <a href="programs.html">Weight Management</a>
+                <a href="programs.html">CrossFit</a>
+                <a href="programs.html">Personal Training</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>CONTACT</h3>
+                <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                <p><i class="fas fa-envelope"></i> info@ironcorefitness.com</p>
+                <p><i class="fas fa-location-dot"></i> Your City, India</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 IRONCORE FITNESS. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
